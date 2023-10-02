@@ -27,7 +27,9 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "deploy": "firebase deploy --token $FIREBASE_TOKEN --non-interactive",
-    "workspace-generator": "nx workspace-generator"
+    "workspace-generator": "nx workspace-generator",
+    "gen": "nx generate @nrwl/angular:component roster --standalone",
+    "gen-serv":"nx g @nrwl/angular:service services/roster"
   },
   "private": true,
   "dependencies": {

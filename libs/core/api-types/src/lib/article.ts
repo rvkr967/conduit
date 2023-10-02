@@ -10,7 +10,7 @@ export interface Article {
   updatedAt: string;
   favorited: boolean;
   favoritesCount: number;
-  author: Profile;
+  author: any;
 }
 
 export interface ArticleResponse {

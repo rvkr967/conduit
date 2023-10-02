@@ -1,3 +1,5 @@
+import { User } from './user.entity';
+
 export interface IUserData {
   bio: string;
   email: string;
@@ -8,4 +10,8 @@ export interface IUserData {
 
 export interface IUserRO {
   user: IUserData;
+}
+
+export interface IUsersRO {
+  users: User[];
 }

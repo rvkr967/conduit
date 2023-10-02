@@ -10,6 +10,7 @@ import { provideEffects } from '@ngrx/effects';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { API_URL } from '@realworld/core/http-client';
 import { environment } from '../environments/environment';
+import { RosterComponent } from './roster/roster.component';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter([
@@ -17,6 +18,10 @@ export const appConfig: ApplicationConfig = {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full',
+      },
+      {
+        path: 'roster',
+        component: RosterComponent
       },
       {
         path: 'home',

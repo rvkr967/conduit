@@ -1,0 +1,20 @@
+<h1>Conduit Roaster</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th>User Name</th>
+        <th>Total Articles Authored</th>
+        <th>Total Likes Received</th>
+        <th>Date of First Article</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of rosterData">
+        <td>{{ user.userName }}</td>
+        <td>{{ user.articlesAuthored }}</td>
+        <td>{{ user.likesReceived }}</td>
+        <td>{{ user.firstArticleDate | date:'mediumDate' || 'No Date' }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
